@@ -1,0 +1,1483 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$xBBIEyJJbUdnFxTMA4bLzp$GHBGveG1MqLa9wkWBbiBFYi45qdP2rUl855PZWDuo74=",
+      "last_login": "2025-07-24T18:53:34.355Z",
+      "is_superuser": false,
+      "username": "shreyas",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-07-21T15:02:33.563Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$9RsPjKQk9Hnt0N5p2hoNMj$5riJ9T5Zj6SKwV5Rl7DY0ho+gjrThKRwNMm1P4wF78U=",
+      "last_login": "2025-07-21T15:12:49.060Z",
+      "is_superuser": false,
+      "username": "shreesha",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-07-21T15:12:47.701Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 1,
+    "fields": {
+      "user": 4,
+      "amount": 30.0,
+      "category": "Food",
+      "date": "2025-07-08",
+      "note": "samosa and coffee."
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 2,
+    "fields": {
+      "user": 4,
+      "amount": 17.0,
+      "category": "Transport",
+      "date": "2025-07-08",
+      "note": "Auto from Qspiders to PG"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 3,
+    "fields": {
+      "user": 4,
+      "amount": 120.0,
+      "category": "Other",
+      "date": "2025-07-08",
+      "note": "Hair Cut"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "amount": 19.17,
+      "category": "Food",
+      "date": "2025-07-08",
+      "note": "Zepto Offer food"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 6,
+    "fields": {
+      "user": 4,
+      "amount": 17.0,
+      "category": "Food",
+      "date": "2025-07-09",
+      "note": "12 Eggs"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 7,
+    "fields": {
+      "user": 4,
+      "amount": 50.0,
+      "category": "Food",
+      "date": "2025-07-09",
+      "note": "Milk"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 9,
+    "fields": {
+      "user": 4,
+      "amount": 15.0,
+      "category": "Food",
+      "date": "2025-07-10",
+      "note": "Caffe"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 10,
+    "fields": {
+      "user": 4,
+      "amount": 69.0,
+      "category": "Shopping",
+      "date": "2025-07-10",
+      "note": "Vix inheler"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 11,
+    "fields": {
+      "user": 4,
+      "amount": 30.0,
+      "category": "Food",
+      "date": "2025-07-11",
+      "note": "Samosa + Caffe"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 12,
+    "fields": {
+      "user": 4,
+      "amount": 17.0,
+      "category": "Transport",
+      "date": "2025-07-11",
+      "note": "Auto"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 13,
+    "fields": {
+      "user": 4,
+      "amount": 42.0,
+      "category": "Other",
+      "date": "2025-07-11",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 14,
+    "fields": {
+      "user": 4,
+      "amount": 24.0,
+      "category": "Transport",
+      "date": "2025-07-12",
+      "note": "Stedium"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 15,
+    "fields": {
+      "user": 4,
+      "amount": 47.0,
+      "category": "Food",
+      "date": "2025-07-12",
+      "note": "Cool Drinks"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 16,
+    "fields": {
+      "user": 4,
+      "amount": 24.0,
+      "category": "Transport",
+      "date": "2025-07-13",
+      "note": "Stedium"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 17,
+    "fields": {
+      "user": 4,
+      "amount": 80.0,
+      "category": "Food",
+      "date": "2025-07-13",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 18,
+    "fields": {
+      "user": 4,
+      "amount": 20.0,
+      "category": "Transport",
+      "date": "2025-07-13",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 19,
+    "fields": {
+      "user": 4,
+      "amount": 294.0,
+      "category": "Food",
+      "date": "2025-07-13",
+      "note": "Megana Biriyani"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 21,
+    "fields": {
+      "user": 4,
+      "amount": 45.0,
+      "category": "Food",
+      "date": "2025-07-14",
+      "note": "Samosa-Caffe"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 22,
+    "fields": {
+      "user": 4,
+      "amount": 23.0,
+      "category": "Food",
+      "date": "2025-07-14",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 23,
+    "fields": {
+      "user": 4,
+      "amount": 77.0,
+      "category": "Food",
+      "date": "2025-07-15",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 24,
+    "fields": {
+      "user": 4,
+      "amount": 112.0,
+      "category": "Other",
+      "date": "2025-07-07",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 25,
+    "fields": {
+      "user": 4,
+      "amount": 80.0,
+      "category": "Other",
+      "date": "2025-07-15",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 27,
+    "fields": {
+      "user": 4,
+      "amount": 40.0,
+      "category": "Food",
+      "date": "2025-07-16",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 28,
+    "fields": {
+      "user": 4,
+      "amount": 24.0,
+      "category": "Transport",
+      "date": "2025-07-16",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 29,
+    "fields": {
+      "user": 4,
+      "amount": 15.0,
+      "category": "Food",
+      "date": "2025-07-17",
+      "note": "Samosa"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 30,
+    "fields": {
+      "user": 4,
+      "amount": 17.0,
+      "category": "Food",
+      "date": "2025-07-17",
+      "note": "Banana"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 31,
+    "fields": {
+      "user": 4,
+      "amount": 59.0,
+      "category": "Food",
+      "date": "2025-07-19",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 32,
+    "fields": {
+      "user": 4,
+      "amount": 12.0,
+      "category": "Food",
+      "date": "2025-07-19",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 33,
+    "fields": {
+      "user": 4,
+      "amount": 40.0,
+      "category": "Food",
+      "date": "2025-07-18",
+      "note": "Afternoon Food"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 34,
+    "fields": {
+      "user": 4,
+      "amount": 14.0,
+      "category": "Food",
+      "date": "2025-07-18",
+      "note": "Lassy"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 35,
+    "fields": {
+      "user": 4,
+      "amount": 50.0,
+      "category": "Food",
+      "date": "2025-07-20",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 36,
+    "fields": {
+      "user": 4,
+      "amount": 18.0,
+      "category": "Food",
+      "date": "2025-07-20",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 37,
+    "fields": {
+      "user": 4,
+      "amount": 130.0,
+      "category": "Food",
+      "date": "2025-07-20",
+      "note": "Biryani and kabab"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 38,
+    "fields": {
+      "user": 4,
+      "amount": 20.0,
+      "category": "Food",
+      "date": "2025-07-20",
+      "note": "Juce"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 40,
+    "fields": {
+      "user": 6,
+      "amount": 80.0,
+      "category": "Transport",
+      "date": "2025-07-21",
+      "note": "Metro"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 41,
+    "fields": {
+      "user": 6,
+      "amount": 30.0,
+      "category": "Food",
+      "date": "2025-07-21",
+      "note": "Juice"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 43,
+    "fields": {
+      "user": 4,
+      "amount": 30.0,
+      "category": "Food",
+      "date": "2025-07-22",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 44,
+    "fields": {
+      "user": 4,
+      "amount": 50.0,
+      "category": "Food",
+      "date": "2025-07-22",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 45,
+    "fields": {
+      "user": 4,
+      "amount": 30.0,
+      "category": "Food",
+      "date": "2025-07-23",
+      "note": "Egg Rice"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 46,
+    "fields": {
+      "user": 4,
+      "amount": 15.0,
+      "category": "Transport",
+      "date": "2025-07-23",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 63,
+    "fields": {
+      "user": 4,
+      "amount": 12.0,
+      "category": "Other",
+      "date": "2025-07-16",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 64,
+    "fields": {
+      "user": 4,
+      "amount": 40.0,
+      "category": "Other",
+      "date": "2025-07-16",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 109,
+    "fields": {
+      "user": 6,
+      "amount": 7.0,
+      "category": "Other",
+      "date": "2025-07-23",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 110,
+    "fields": {
+      "user": 6,
+      "amount": 130.0,
+      "category": "Other",
+      "date": "2025-07-23",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 111,
+    "fields": {
+      "user": 6,
+      "amount": 50.0,
+      "category": "Other",
+      "date": "2025-07-22",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 112,
+    "fields": {
+      "user": 6,
+      "amount": 30.0,
+      "category": "Other",
+      "date": "2025-07-22",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 113,
+    "fields": {
+      "user": 6,
+      "amount": 30.0,
+      "category": "Other",
+      "date": "2025-07-22",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 114,
+    "fields": {
+      "user": 6,
+      "amount": 20.0,
+      "category": "Other",
+      "date": "2025-07-20",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 115,
+    "fields": {
+      "user": 6,
+      "amount": 130.0,
+      "category": "Other",
+      "date": "2025-07-20",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 116,
+    "fields": {
+      "user": 6,
+      "amount": 50.0,
+      "category": "Other",
+      "date": "2025-07-20",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 117,
+    "fields": {
+      "user": 6,
+      "amount": 12.0,
+      "category": "Other",
+      "date": "2025-07-19",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 118,
+    "fields": {
+      "user": 6,
+      "amount": 58.0,
+      "category": "Other",
+      "date": "2025-07-19",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 119,
+    "fields": {
+      "user": 6,
+      "amount": 3.0,
+      "category": "Other",
+      "date": "2025-07-18",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 120,
+    "fields": {
+      "user": 6,
+      "amount": 25.0,
+      "category": "Other",
+      "date": "2025-07-18",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 121,
+    "fields": {
+      "user": 6,
+      "amount": 120.0,
+      "category": "Other",
+      "date": "2025-07-18",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 122,
+    "fields": {
+      "user": 6,
+      "amount": 16.0,
+      "category": "Other",
+      "date": "2025-07-17",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 123,
+    "fields": {
+      "user": 6,
+      "amount": 15.0,
+      "category": "Other",
+      "date": "2025-07-17",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 124,
+    "fields": {
+      "user": 6,
+      "amount": 12.0,
+      "category": "Other",
+      "date": "2025-07-16",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 125,
+    "fields": {
+      "user": 6,
+      "amount": 12.0,
+      "category": "Other",
+      "date": "2025-07-16",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 126,
+    "fields": {
+      "user": 6,
+      "amount": 40.0,
+      "category": "Other",
+      "date": "2025-07-16",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 127,
+    "fields": {
+      "user": 6,
+      "amount": 70.0,
+      "category": "Other",
+      "date": "2025-07-15",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 128,
+    "fields": {
+      "user": 6,
+      "amount": 20.0,
+      "category": "Other",
+      "date": "2025-07-15",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 129,
+    "fields": {
+      "user": 6,
+      "amount": 57.0,
+      "category": "Other",
+      "date": "2025-07-15",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 130,
+    "fields": {
+      "user": 6,
+      "amount": 23.0,
+      "category": "Other",
+      "date": "2025-07-14",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 131,
+    "fields": {
+      "user": 6,
+      "amount": 90.0,
+      "category": "Other",
+      "date": "2025-07-14",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 132,
+    "fields": {
+      "user": 6,
+      "amount": 20.0,
+      "category": "Other",
+      "date": "2025-07-13",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 133,
+    "fields": {
+      "user": 6,
+      "amount": 12.0,
+      "category": "Other",
+      "date": "2025-07-13",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 134,
+    "fields": {
+      "user": 6,
+      "amount": 80.0,
+      "category": "Other",
+      "date": "2025-07-13",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 135,
+    "fields": {
+      "user": 6,
+      "amount": 12.0,
+      "category": "Other",
+      "date": "2025-07-13",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 136,
+    "fields": {
+      "user": 6,
+      "amount": 1.0,
+      "category": "Other",
+      "date": "2025-07-13",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 137,
+    "fields": {
+      "user": 6,
+      "amount": 12.0,
+      "category": "Other",
+      "date": "2025-07-12",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 138,
+    "fields": {
+      "user": 6,
+      "amount": 47.0,
+      "category": "Other",
+      "date": "2025-07-12",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 139,
+    "fields": {
+      "user": 6,
+      "amount": 42.0,
+      "category": "Other",
+      "date": "2025-07-11",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 140,
+    "fields": {
+      "user": 6,
+      "amount": 30.0,
+      "category": "Other",
+      "date": "2025-07-11",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 141,
+    "fields": {
+      "user": 6,
+      "amount": 50.0,
+      "category": "Other",
+      "date": "2025-07-09",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 142,
+    "fields": {
+      "user": 6,
+      "amount": 16.0,
+      "category": "Other",
+      "date": "2025-07-09",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 143,
+    "fields": {
+      "user": 6,
+      "amount": 30.0,
+      "category": "Other",
+      "date": "2025-07-09",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 144,
+    "fields": {
+      "user": 6,
+      "amount": 19.0,
+      "category": "Other",
+      "date": "2025-07-08",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 145,
+    "fields": {
+      "user": 6,
+      "amount": 22.0,
+      "category": "Other",
+      "date": "2025-07-07",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 146,
+    "fields": {
+      "user": 6,
+      "amount": 6.0,
+      "category": "Other",
+      "date": "2025-07-07",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 147,
+    "fields": {
+      "user": 6,
+      "amount": 60.0,
+      "category": "Other",
+      "date": "2025-07-07",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 148,
+    "fields": {
+      "user": 6,
+      "amount": 120.0,
+      "category": "Other",
+      "date": "2025-07-06",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 149,
+    "fields": {
+      "user": 6,
+      "amount": 38.0,
+      "category": "Other",
+      "date": "2025-07-06",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 150,
+    "fields": {
+      "user": 6,
+      "amount": 30.0,
+      "category": "Other",
+      "date": "2025-07-06",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 151,
+    "fields": {
+      "user": 6,
+      "amount": 40.0,
+      "category": "Other",
+      "date": "2025-07-06",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 152,
+    "fields": {
+      "user": 6,
+      "amount": 317.0,
+      "category": "Other",
+      "date": "2025-07-05",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 153,
+    "fields": {
+      "user": 6,
+      "amount": 62.0,
+      "category": "Other",
+      "date": "2025-07-05",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 154,
+    "fields": {
+      "user": 6,
+      "amount": 7000.0,
+      "category": "Other",
+      "date": "2025-07-05",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 155,
+    "fields": {
+      "user": 6,
+      "amount": 1.0,
+      "category": "Other",
+      "date": "2025-07-05",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 156,
+    "fields": {
+      "user": 6,
+      "amount": 95.0,
+      "category": "Other",
+      "date": "2025-07-05",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 157,
+    "fields": {
+      "user": 6,
+      "amount": 19.0,
+      "category": "Other",
+      "date": "2025-07-04",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 158,
+    "fields": {
+      "user": 6,
+      "amount": 120.0,
+      "category": "Other",
+      "date": "2025-07-04",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 159,
+    "fields": {
+      "user": 6,
+      "amount": 20.0,
+      "category": "Other",
+      "date": "2025-07-04",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 160,
+    "fields": {
+      "user": 6,
+      "amount": 60.0,
+      "category": "Other",
+      "date": "2025-07-04",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 161,
+    "fields": {
+      "user": 6,
+      "amount": 45.0,
+      "category": "Other",
+      "date": "2025-07-03",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 162,
+    "fields": {
+      "user": 6,
+      "amount": 7000.0,
+      "category": "Other",
+      "date": "2025-07-02",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 163,
+    "fields": {
+      "user": 6,
+      "amount": 58.0,
+      "category": "Other",
+      "date": "2025-06-29",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 164,
+    "fields": {
+      "user": 6,
+      "amount": 95.0,
+      "category": "Other",
+      "date": "2025-06-29",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 165,
+    "fields": {
+      "user": 6,
+      "amount": 77.0,
+      "category": "Other",
+      "date": "2025-06-29",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 166,
+    "fields": {
+      "user": 6,
+      "amount": 1103.0,
+      "category": "Other",
+      "date": "2025-06-28",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 167,
+    "fields": {
+      "user": 6,
+      "amount": 899.0,
+      "category": "Other",
+      "date": "2025-06-28",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 168,
+    "fields": {
+      "user": 6,
+      "amount": 120.0,
+      "category": "Other",
+      "date": "2025-06-26",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 169,
+    "fields": {
+      "user": 6,
+      "amount": 32.0,
+      "category": "Other",
+      "date": "2025-06-26",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 170,
+    "fields": {
+      "user": 6,
+      "amount": 20.0,
+      "category": "Other",
+      "date": "2025-06-24",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 171,
+    "fields": {
+      "user": 4,
+      "amount": 45.0,
+      "category": "Food",
+      "date": "2025-07-24",
+      "note": "Samosa+chai"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 172,
+    "fields": {
+      "user": 4,
+      "amount": 60.0,
+      "category": "Food",
+      "date": "2025-07-25",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 173,
+    "fields": {
+      "user": 4,
+      "amount": 135.0,
+      "category": "Food",
+      "date": "2025-07-27",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 174,
+    "fields": {
+      "user": 4,
+      "amount": 50.0,
+      "category": "Transport",
+      "date": "2025-07-28",
+      "note": "Metro"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 175,
+    "fields": {
+      "user": 4,
+      "amount": 20.0,
+      "category": "Transport",
+      "date": "2025-07-28",
+      "note": "METRO"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 176,
+    "fields": {
+      "user": 4,
+      "amount": 30.0,
+      "category": "Food",
+      "date": "2025-07-29",
+      "note": "SAMOSA"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 177,
+    "fields": {
+      "user": 4,
+      "amount": 150.0,
+      "category": "Shopping",
+      "date": "2025-07-29",
+      "note": "Posters"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 178,
+    "fields": {
+      "user": 4,
+      "amount": 10.0,
+      "category": "Shopping",
+      "date": "2025-07-29",
+      "note": "Plaster"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 179,
+    "fields": {
+      "user": 4,
+      "amount": 436.0,
+      "category": "Food",
+      "date": "2025-07-28",
+      "note": "Daba Food with Brothers"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 180,
+    "fields": {
+      "user": 4,
+      "amount": 30.0,
+      "category": "Food",
+      "date": "2025-08-02",
+      "note": "Puri"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 181,
+    "fields": {
+      "user": 4,
+      "amount": 70.0,
+      "category": "Food",
+      "date": "2025-08-02",
+      "note": "Gobhi"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 182,
+    "fields": {
+      "user": 4,
+      "amount": 25.0,
+      "category": "Food",
+      "date": "2025-08-02",
+      "note": "Suger Cane Juice"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 183,
+    "fields": {
+      "user": 4,
+      "amount": 50.0,
+      "category": "Food",
+      "date": "2025-08-01",
+      "note": "Dosa"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 184,
+    "fields": {
+      "user": 4,
+      "amount": 22.0,
+      "category": "Transport",
+      "date": "2025-08-01",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 185,
+    "fields": {
+      "user": 4,
+      "amount": 50.0,
+      "category": "Food",
+      "date": "2025-08-01",
+      "note": "Pani Puri"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 186,
+    "fields": {
+      "user": 4,
+      "amount": 100.0,
+      "category": "Food",
+      "date": "2025-07-31",
+      "note": "Parota and Chicken liver fry"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 187,
+    "fields": {
+      "user": 4,
+      "amount": 15.0,
+      "category": "Food",
+      "date": "2025-07-31",
+      "note": "Cafee"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 188,
+    "fields": {
+      "user": 4,
+      "amount": 165.0,
+      "category": "Food",
+      "date": "2025-08-03",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 189,
+    "fields": {
+      "user": 4,
+      "amount": 70.0,
+      "category": "Food",
+      "date": "2025-08-04",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 190,
+    "fields": {
+      "user": 4,
+      "amount": 10.0,
+      "category": "Shopping",
+      "date": "2025-08-04",
+      "note": "Plaster"
+    }
+  },
+  {
+    "model": "expenses.expense",
+    "pk": 191,
+    "fields": {
+      "user": 4,
+      "amount": 11.0,
+      "category": "Other",
+      "date": "2025-08-04",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.pocketmoney",
+    "pk": 1,
+    "fields": {
+      "user": 4,
+      "amount": 1000.0,
+      "date_received": "2025-07-06",
+      "note": "For Month of June"
+    }
+  },
+  {
+    "model": "expenses.pocketmoney",
+    "pk": 2,
+    "fields": {
+      "user": 4,
+      "amount": 1000.0,
+      "date_received": "2025-07-13",
+      "note": "Month of June"
+    }
+  },
+  {
+    "model": "expenses.pocketmoney",
+    "pk": 3,
+    "fields": {
+      "user": 6,
+      "amount": 1000.0,
+      "date_received": "2025-07-20",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.pocketmoney",
+    "pk": 4,
+    "fields": {
+      "user": 7,
+      "amount": 63.0,
+      "date_received": "2025-07-20",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.pocketmoney",
+    "pk": 5,
+    "fields": {
+      "user": 4,
+      "amount": 1000.0,
+      "date_received": "2025-07-28",
+      "note": ""
+    }
+  },
+  {
+    "model": "expenses.pocketmoney",
+    "pk": 6,
+    "fields": {
+      "user": 4,
+      "amount": 2080.0,
+      "date_received": "2025-08-01",
+      "note": "For Month of Agust"
+    }
+  },
+  {
+    "model": "expenses.pocketmoney",
+    "pk": 7,
+    "fields": {
+      "user": 4,
+      "amount": 500.0,
+      "date_received": "2025-08-04",
+      "note": "Manju Dodappa"
+    }
+  }
+]
