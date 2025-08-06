@@ -76,7 +76,7 @@ class Command(BaseCommand):
                                 user=user,
                                 amount=fields['amount'],
                                 date_received=date_obj,
-                                source=fields.get('source', '')
+                                note=fields.get('source', '')  # Use 'source' as 'note'
                             )
                             pocket_money_count += 1
                         except Exception as e:
@@ -258,13 +258,13 @@ class Command(BaseCommand):
             
             # Comprehensive pocket money data
             comprehensive_pocket_money = [
-                {'amount': 1000.0, 'date_received': '2025-07-01', 'source': 'Monthly Allowance'},
-                {'amount': 500.0, 'date_received': '2025-07-15', 'source': 'Part-time Work'},
-                {'amount': 300.0, 'date_received': '2025-07-20', 'source': 'Freelance'},
-                {'amount': 800.0, 'date_received': '2025-08-01', 'source': 'Monthly Allowance'},
-                {'amount': 400.0, 'date_received': '2025-08-15', 'source': 'Part-time Work'},
-                {'amount': 250.0, 'date_received': '2025-08-20', 'source': 'Freelance'},
-                {'amount': 150.0, 'date_received': '2025-08-25', 'source': 'Bonus'},
+                {'amount': 1000.0, 'date_received': '2025-07-01', 'note': 'Monthly Allowance'},
+                {'amount': 500.0, 'date_received': '2025-07-15', 'note': 'Part-time Work'},
+                {'amount': 300.0, 'date_received': '2025-07-20', 'note': 'Freelance'},
+                {'amount': 800.0, 'date_received': '2025-08-01', 'note': 'Monthly Allowance'},
+                {'amount': 400.0, 'date_received': '2025-08-15', 'note': 'Part-time Work'},
+                {'amount': 250.0, 'date_received': '2025-08-20', 'note': 'Freelance'},
+                {'amount': 150.0, 'date_received': '2025-08-25', 'note': 'Bonus'},
             ]
             
             # Create all pocket money records
@@ -276,7 +276,7 @@ class Command(BaseCommand):
                         user=user,
                         amount=pm_data['amount'],
                         date_received=date_obj,
-                        source=pm_data['source']
+                        note=pm_data['note']
                     )
                 except Exception as e:
                     self.stdout.write(f"⚠️ Error creating pocket money: {e}")
