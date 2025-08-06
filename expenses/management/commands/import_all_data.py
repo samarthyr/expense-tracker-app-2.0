@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand
 from django.contrib.auth.models import User
 from expenses.models import Expense, PocketMoney
+from datetime import datetime
 import json
 import os
 
@@ -50,24 +51,36 @@ class Command(BaseCommand):
                 for item in data:
                     if item['model'] == 'expenses.expense':
                         fields = item['fields']
-                        Expense.objects.create(
-                            user=user,
-                            amount=fields['amount'],
-                            category=fields['category'],
-                            date=fields['date'],
-                            note=fields['note']
-                        )
-                        expense_count += 1
+                        try:
+                            # Convert date string to date object
+                            date_obj = datetime.strptime(fields['date'], '%Y-%m-%d').date()
+                            
+                            Expense.objects.create(
+                                user=user,
+                                amount=fields['amount'],
+                                category=fields['category'],
+                                date=date_obj,
+                                note=fields['note']
+                            )
+                            expense_count += 1
+                        except Exception as e:
+                            self.stdout.write(f"⚠️ Skipping expense due to date error: {e}")
                     
                     elif item['model'] == 'expenses.pocketmoney':
                         fields = item['fields']
-                        PocketMoney.objects.create(
-                            user=user,
-                            amount=fields['amount'],
-                            date_received=fields['date_received'],
-                            source=fields.get('source', '')
-                        )
-                        pocket_money_count += 1
+                        try:
+                            # Convert date string to date object
+                            date_obj = datetime.strptime(fields['date_received'], '%Y-%m-%d').date()
+                            
+                            PocketMoney.objects.create(
+                                user=user,
+                                amount=fields['amount'],
+                                date_received=date_obj,
+                                source=fields.get('source', '')
+                            )
+                            pocket_money_count += 1
+                        except Exception as e:
+                            self.stdout.write(f"⚠️ Skipping pocket money due to date error: {e}")
                 
                 self.stdout.write(
                     self.style.SUCCESS(f'✅ Imported {expense_count} expenses and {pocket_money_count} pocket money records!')
@@ -230,7 +243,18 @@ class Command(BaseCommand):
             
             # Create all expenses
             for expense_data in comprehensive_expenses:
-                Expense.objects.create(user=user, **expense_data)
+                try:
+                    # Convert date string to date object
+                    date_obj = datetime.strptime(expense_data['date'], '%Y-%m-%d').date()
+                    Expense.objects.create(
+                        user=user,
+                        amount=expense_data['amount'],
+                        category=expense_data['category'],
+                        date=date_obj,
+                        note=expense_data['note']
+                    )
+                except Exception as e:
+                    self.stdout.write(f"⚠️ Error creating expense: {e}")
             
             # Comprehensive pocket money data
             comprehensive_pocket_money = [
@@ -245,10 +269,20 @@ class Command(BaseCommand):
             
             # Create all pocket money records
             for pm_data in comprehensive_pocket_money:
-                PocketMoney.objects.create(user=user, **pm_data)
+                try:
+                    # Convert date string to date object
+                    date_obj = datetime.strptime(pm_data['date_received'], '%Y-%m-%d').date()
+                    PocketMoney.objects.create(
+                        user=user,
+                        amount=pm_data['amount'],
+                        date_received=date_obj,
+                        source=pm_data['source']
+                    )
+                except Exception as e:
+                    self.stdout.write(f"⚠️ Error creating pocket money: {e}")
             
             self.stdout.write(
-                self.style.SUCCESS(f'✅ Created {len(comprehensive_expenses)} expenses and {len(comprehensive_pocket_money)} pocket money records!')
+                self.style.SUCCESS(f'✅ Created comprehensive sample data!')
             )
             
         except Exception as e:
