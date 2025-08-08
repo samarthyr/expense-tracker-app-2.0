@@ -36,8 +36,34 @@ def migrate_data():
     print(f"  - Expenses: {expense_count}")
     print(f"  - Pocket Money entries: {pocket_money_count}")
     
+    # Create admin user if it doesn't exist
+    try:
+        admin_user, created = User.objects.get_or_create(
+            username='SamarthYR',
+            defaults={
+                'email': 'samarth@example.com',
+                'first_name': 'Samarth',
+                'last_name': 'YR',
+                'is_staff': True,
+                'is_superuser': True,
+            }
+        )
+        if created:
+            admin_user.set_password('admin@1234')
+            admin_user.save()
+            print("✅ Admin user 'SamarthYR' created successfully!")
+        else:
+            # Update password if user exists
+            admin_user.set_password('admin@1234')
+            admin_user.is_staff = True
+            admin_user.is_superuser = True
+            admin_user.save()
+            print("✅ Admin user 'SamarthYR' password updated!")
+    except Exception as e:
+        print(f"❌ Error creating admin user: {e}")
+    
     if expense_count > 0 or pocket_money_count > 0:
-        print("⚠️  PostgreSQL already has data. Skipping migration.")
+        print("⚠️  PostgreSQL already has data. Skipping data import.")
         return
     
     # Try to import from the data file
