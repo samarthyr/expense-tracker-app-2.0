@@ -98,6 +98,9 @@ if not DEBUG:
                 'PORT': config('DB_PORT', default='5432'),
             }
         }
+    else:
+        # If no PostgreSQL config, use SQLite but warn about data persistence
+        print("WARNING: Using SQLite database. Data will not persist across deployments!")
 
 
 # Password validation
