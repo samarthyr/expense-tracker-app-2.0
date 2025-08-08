@@ -9,8 +9,20 @@ python manage.py collectstatic --no-input
 # Run migrations
 python manage.py migrate
 
-# Only import data if we're using SQLite (development) or if explicitly requested
-if [ "$DB_NAME" = "" ] && [ "$SKIP_DATA_IMPORT" != "true" ]; then
+# Import data if PostgreSQL is empty or if we're using SQLite
+if [ "$DB_NAME" = "" ]; then
     # Import ALL original data for SamarthYR (only for SQLite/development)
     python manage.py import_all_data
+else
+    # For PostgreSQL, check if data exists and import if empty
+    python manage.py shell -c "
+from expenses.models import Expense, PocketMoney
+if Expense.objects.count() == 0 and PocketMoney.objects.count() == 0:
+    print('No data found in PostgreSQL, importing sample data...')
+    from django.core.management import call_command
+    call_command('import_all_data')
+    print('Data import completed!')
+else:
+    print('PostgreSQL already has data, skipping import.')
+"
 fi 
