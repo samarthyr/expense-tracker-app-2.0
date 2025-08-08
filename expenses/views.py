@@ -704,3 +704,27 @@ def import_statement(request):
 def welcome(request):
     return render(request, 'expenses/welcome.html')
 
+def database_status(request):
+    """Simple view to check database status"""
+    from django.db import connection
+    from django.conf import settings
+    
+    context = {
+        'database_engine': settings.DATABASES['default']['ENGINE'],
+        'database_name': settings.DATABASES['default']['NAME'],
+        'total_expenses': Expense.objects.count(),
+        'total_pocket_money': PocketMoney.objects.count(),
+        'recent_expenses': Expense.objects.order_by('-date')[:5],
+    }
+    
+    # Test database connection
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute("SELECT 1")
+            context['database_connected'] = True
+    except Exception as e:
+        context['database_connected'] = False
+        context['database_error'] = str(e)
+    
+    return render(request, 'expenses/database_status.html', context)
+

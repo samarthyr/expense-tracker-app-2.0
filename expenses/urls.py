@@ -23,4 +23,5 @@ urlpatterns = [
     path('download_monthly_expenses/', views.download_monthly_expenses, name='download_monthly_expenses'),
     path('analysis/', views.analysis, name='analysis'),
     path('import-statement/', views.import_statement, name='import_statement'),
+    path('database-status/', views.database_status, name='database_status'),
 ]
